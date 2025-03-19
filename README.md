@@ -1,50 +1,104 @@
-# Welcome to your Expo app 👋
+# React Native YouTube Clone
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A YouTube mobile app clone built with React Native and Expo, created while learning React Native development. This project is based on the tutorial from [FreeCodeCamp YouTube video](https://www.youtube.com/watch?v=sm5Y7Vtuihg).
 
-## Get started
+![App Screenshot](./assets/simulator_screenshot_main.png)
+![App Screenshot](./assets/simulator_screenshot_pop.png)
 
-1. Install dependencies
+## Features
+
+- Expo Router for navigation between screens
+- Custom splash screen with font loading
+- Dynamic theme support (light/dark mode)
+- Interactive screens:
+  - Landing page with Pingu background
+  - Pop page with Wizard Pingu theme
+- Styled components with:
+  - Custom backgrounds using ImageBackground
+  - Styled buttons and text overlays
+  - Semi-transparent overlays using rgba
+- Responsive layouts using React Native StyleSheet
+
+## About This Project
+
+This is a learning project where I'm building a YouTube clone to understand React Native fundamentals. The project uses:
+
+- [Expo](https://expo.dev) 0.22.18
+- React Native 0.78.0
+- Expo Router for navigation
+- React Native components
+- Expo SplashScreen for launch experience
+
+## Getting Started
+
+1. Clone the repository
+
+   ```bash
+   git clone [your-repo-url]
+   cd [your-project-name]
+   ```
+
+2. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. Start the development server
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+After starting the development server, you can run the app in:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- iOS Simulator (press i)
+- Android Emulator (press a)
+- Your physical device by scanning the QR code with the Expo Go app
 
-## Get a fresh project
+## Project Structure
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+rn-clone/
+├── app/              # Main application code with Expo Router
+│ ├── (pingu)/        # Pingu-themed route group
+│ │ └── \_layout.tsx  # Layout for Pingu routes
+│ ├── (tabs)/         # Tab navigation group
+│ ├── \_layout.tsx    # Root layout with theme setup
+│ ├── index.jsx       # Home screen with Pingu background
+│ ├── pop.jsx         # Wizard Pingu screen
+│ └── +not-found.tsx  # 404 error screen
+├── assets/           # Static assets
+│ ├── images/         # Image files
+│ │ ├── pingu.jpeg    # Pingu background image
+│ │ └── wizard-pingu.jpeg  # Wizard Pingu image
+│ └── fonts/               # Custom fonts
+│ └── SpaceMono-Regular.ttf
+├── components/            # Reusable UI components
+├── hooks/                 # Custom React hooks
+│ └── useColorScheme.ts    # Theme hook
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Testing
 
-## Learn more
+Run the test suite with:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm test
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Learning Resources
 
-## Join the community
+- Tutorial followed: [YouTube Clone Tutorial](https://www.youtube.com/watch?v=sm5Y7Vtuihg)
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
 
-Join our community of developers creating universal apps.
+## Acknowledgments
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Thanks to the tutorial creator for the guidance
+- Built with Expo and React Native
+
+## Note
+
+This is a learning project and not intended for production use. I'm building this to improve my React Native development skills.
