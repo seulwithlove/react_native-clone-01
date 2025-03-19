@@ -2,8 +2,8 @@
 
 A YouTube mobile app clone built with React Native and Expo, created while learning React Native development. This project is based on the tutorial from [FreeCodeCamp YouTube video](https://www.youtube.com/watch?v=sm5Y7Vtuihg).
 
-![App Screenshot](./assets/images/simulator_screenshot_main.png)
-![App Screenshot](./assets/images/simulator_screenshot_pop.png)
+<img src="./assets/images/simulator_screenshot_main.png" style="width: 40%;" alt="Main Screen">
+<img src="./assets/images/simulator_screenshot_pop.png" style="width: 40%;" alt="Pop Screen">
 
 ## Features
 
