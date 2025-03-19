@@ -34,12 +34,13 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
-        {/* <Stack.Screen name="(tabs)" options={{ headerShown: false }} /> */}
-        <Stack.Screen
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        {/* <Stack.Screen name="(hello)" options={{ headerShown: false }} /> */}
+        {/* <Stack.Screen
           name="index"
           options={{ title: "HELLO", headerShown: false }}
         />
-        <Stack.Screen name="pop" options={{ title: "POP!" }} />
+        <Stack.Screen name="pop" options={{ title: "POP!" }} /> */}
 
         <Stack.Screen name="+not-found" />
       </Stack>
